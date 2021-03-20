@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Fifteen-of-Game"
