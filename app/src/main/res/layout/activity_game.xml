@@ -45,7 +45,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/box1"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
@@ -54,40 +54,7 @@
                 android:text="1" />
 
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="2" />
-
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="3" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="4" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/box5"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
@@ -96,40 +63,7 @@
                 android:text="5" />
 
             <TextView
-                android:id="@+id/textView22"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="6" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="7" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="8" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/box9"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
@@ -138,31 +72,13 @@
                 android:text="9" />
 
             <TextView
-                android:id="@+id/textView26"
+                android:id="@+id/box13"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
-                android:text="10" />
-
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="11" />
-
-            <TextView
-                android:id="@+id/textView28"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:background="@drawable/box"
-                android:text="12" />
+                android:text="13" />
         </LinearLayout>
 
         <LinearLayout
@@ -171,34 +87,118 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView29"
+                android:id="@+id/box2"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
-                android:text="13" />
+                android:text="2" />
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/box6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/box10"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/box14"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:text="14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView31"
+                android:id="@+id/box3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/box7"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/box11"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="11" />
+
+            <TextView
+                android:id="@+id/box15"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:text="15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView32"
+                android:id="@+id/box4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/box8"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/box12"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:text="12" />
+
+            <TextView
+                android:id="@+id/box16"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:textSize="30sp"
@@ -211,7 +211,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/new_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
