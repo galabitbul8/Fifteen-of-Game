@@ -18,7 +18,6 @@ import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SharedPreferences sp = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
@@ -33,11 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(musicOn){
             musicSwitch.toggle();
         }
+        // loop the audio
         musicSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
         {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) //Line A
             {
-                Log.d("myLog", "onCheckedChanged: " + isChecked);
                 editor.putBoolean("musicOn", isChecked);
                 editor.commit();
             }
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreateOptionsMenu(menu);
         MenuItem about = menu.add("About");
         MenuItem exit = menu.add("Exit");
-
 
         about.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
@@ -108,16 +106,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
-
-//    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//        if (isChecked) {
-//            Log.d("myLog", "onCheckedChanged: YES");
-//            // do something when check is selected
-//        } else {
-//            Log.d("myLog", "onCheckedChanged: NO");
-//
-//            //do something when unchecked
-//        }
-//    }
-
 }

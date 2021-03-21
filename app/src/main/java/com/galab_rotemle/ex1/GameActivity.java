@@ -3,7 +3,6 @@ package com.galab_rotemle.ex1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -11,12 +10,10 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.sql.Timestamp;
 import java.util.Locale;
 
 public class GameActivity extends AppCompatActivity implements View.OnClickListener{
@@ -147,7 +144,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void startTime(){
-        Log.d("myLog", "startTime: " + thread);
         if(thread == null) {
             thread = new Thread(new Runnable() {
 
