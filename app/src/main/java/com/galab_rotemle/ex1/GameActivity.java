@@ -2,7 +2,9 @@ package com.galab_rotemle.ex1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -28,16 +30,31 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     int m = 0;
     boolean pauseTimer = false;
     MediaPlayer mp;
+    boolean musicOn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences sp = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+        musicOn = sp.getBoolean("musicOn", false);
+
         setContentView(R.layout.activity_game);
         txtTime = (TextView) findViewById(R.id.time);
         startTime();
         board = new GameBoard();
         mp = MediaPlayer.create(this, R.raw.androidmusic);
-        mp.start();
+        if(musicOn){
+            Log.d("myLog", "onCreate boolean2: " + musicOn);
+            mp.start();
+        }
+
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.start();
+            }
+        });
 
         Button btnNewGame = (Button)findViewById(R.id.new_game);
         txtMoves =  findViewById(R.id.textView33);
@@ -51,6 +68,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         insertData();
     }
 
+
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -62,15 +81,19 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         super.onPause();
         Log.d("myLog", "onPause: ");
         pauseTimer = true;
+        if(musicOn)
+            mp.pause();
         mp.pause();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("myLog", "onResume: ");
+        Log.d("myLog", "onResume: " + musicOn);
         pauseTimer = false;
-        mp.start();
+        if(musicOn){
+            mp.start();
+        }
     }
 
     private void insertData() {

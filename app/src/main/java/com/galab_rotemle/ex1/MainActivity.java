@@ -13,22 +13,37 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-//    SharedPreferences sp = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
-//    SharedPreferences.Editor editor = sp.edit();
-    Switch musicSwitch; // TODO: save the switch status in the sharedPreferences
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences sp = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        boolean musicOn = sp.getBoolean("musicOn", false);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btnStart = (Button)findViewById(R.id.start);
+        Button btnStart = (Button) findViewById(R.id.start);
         btnStart.setOnClickListener(this);
-        musicSwitch = findViewById(R.id.switch1);
-    }
+        Switch musicSwitch = (Switch) findViewById(R.id.switch1);
+        if(musicOn){
+            musicSwitch.toggle();
+        }
+        musicSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) //Line A
+            {
+                Log.d("myLog", "onCheckedChanged: " + isChecked);
+                editor.putBoolean("musicOn", isChecked);
+                editor.commit();
+            }
+        });
 
+    }
     public boolean onCreateOptionsMenu(Menu menu)
     {
         super.onCreateOptionsMenu(menu);
@@ -93,4 +108,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
+//    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//        if (isChecked) {
+//            Log.d("myLog", "onCheckedChanged: YES");
+//            // do something when check is selected
+//        } else {
+//            Log.d("myLog", "onCheckedChanged: NO");
+//
+//            //do something when unchecked
+//        }
+//    }
+
 }
