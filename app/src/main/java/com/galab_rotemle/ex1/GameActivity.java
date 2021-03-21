@@ -19,7 +19,6 @@ import java.sql.Timestamp;
 import java.util.Locale;
 
 public class GameActivity extends AppCompatActivity implements View.OnClickListener{
-    String time = "00:00";
     TextView txtTime;
     Thread thread;
     boolean done = false;
@@ -137,16 +136,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     }
                 }
-                int length =(int) (Math.log10(board.count) + 1);
-
-                String zeros="000";
-                if(length  == 2)
-                    zeros="00";
-                else if(length == 3)
-                    zeros="0";
-                else if(length ==4)
-                    zeros="";
-                txtMoves.setText("Moves: "+zeros +board.count);
+                txtMoves.setText(String.format( "Moves: %04d", board.count));
             }
         }
     }
