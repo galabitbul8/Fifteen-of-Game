@@ -1,6 +1,9 @@
 package com.galab_rotemle.ex1;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.DialogInterface;
@@ -10,16 +13,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+//    SharedPreferences sp = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+//    SharedPreferences.Editor editor = sp.edit();
+    Switch musicSwitch; // TODO: save the switch status in the sharedPreferences
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btnStart = (Button)findViewById(R.id.start);
         btnStart.setOnClickListener(this);
-
+        musicSwitch = findViewById(R.id.switch1);
     }
 
     public boolean onCreateOptionsMenu(Menu menu)
@@ -27,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreateOptionsMenu(menu);
         MenuItem about = menu.add("About");
         MenuItem exit = menu.add("Exit");
+
 
         about.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
@@ -42,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
                 dialog.setIcon(R.mipmap.ic_launcher);
                 dialog.setTitle("About App");
-                dialog.setMessage("Puzzle 15 ("+getPackageName()+")\n\nBy Rotem Levi & Gal David Abitbul");
+                dialog.setMessage("Puzzle 15 ("+getPackageName()+")\n\nBy Rotem Levy & Gal David Abitbul");
 
                 dialog.show();
                 return true;
@@ -83,5 +91,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this,GameActivity.class);
             startActivity(intent);
         }
+
     }
 }
