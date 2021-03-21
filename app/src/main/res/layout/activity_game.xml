@@ -33,10 +33,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="324sp"
-        android:layout_height="324dp"
+        android:layout_width="326sp"
+        android:layout_height="326dp"
         android:orientation="horizontal"
         android:gravity="center"
+        android:backgroundTint="@color/black"
         android:background="@drawable/box">
 
         <LinearLayout
@@ -46,46 +47,46 @@
 
             <TextView
                 android:id="@+id/box1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="1" />
 
             <TextView
                 android:id="@+id/box5"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="5" />
 
             <TextView
                 android:id="@+id/box9"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="9" />
 
             <TextView
                 android:id="@+id/box13"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="13" />
         </LinearLayout>
 
@@ -97,47 +98,47 @@
             <TextView
 
                 android:id="@+id/box2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="2" />
 
             <TextView
                 android:id="@+id/box6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="6" />
 
             <TextView
 
                 android:id="@+id/box10"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="10" />
 
             <TextView
                 android:id="@+id/box14"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="14" />
         </LinearLayout>
 
@@ -148,46 +149,46 @@
 
             <TextView
                 android:id="@+id/box3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="3" />
 
             <TextView
                 android:id="@+id/box7"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="7" />
 
             <TextView
                 android:id="@+id/box11"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="11" />
 
             <TextView
                 android:id="@+id/box15"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="15" />
         </LinearLayout>
 
@@ -198,44 +199,46 @@
 
             <TextView
                 android:id="@+id/box4"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="4" />
 
             <TextView
                 android:id="@+id/box8"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="8" />
 
             <TextView
                 android:id="@+id/box12"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:backgroundTint="@color/brown"
+                android:layout_margin="1dp"
                 android:text="12" />
 
             <TextView
                 android:id="@+id/box16"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
+                android:textColor="@color/yellow"
+                android:layout_margin="1dp"
                 android:text="" />
         </LinearLayout>
 
