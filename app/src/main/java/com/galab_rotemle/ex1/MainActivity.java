@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
                 dialog.setIcon(R.mipmap.ic_launcher);
                 dialog.setTitle("About App");
-                dialog.setMessage("Puzzle 15 ("+getPackageName()+")\n\nBy Rotem Levy & Gal David Abitbul");
+                dialog.setMessage("Puzzle 15 ("+getPackageName()+")\n\nBy Rotem Levy & Gal David Abitbul, 24/3/2021");
 
                 dialog.show();
                 return true;
