@@ -27,7 +27,7 @@ public class GameBoard {
     }
 
     private int[][] initMatrix(int size) {
-        int[][]mat = new int[size][size];;
+        int[][]mat = new int[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 mat[i][j] = (j + 1 + i*size);
@@ -48,7 +48,7 @@ public class GameBoard {
         int[] preLoc = new int[] {matrix.length - 1, matrix.length - 1};
         int[][] indexes = new int[4][2];
 
-        int numberOfSteps = 100;
+        int numberOfSteps = 1;
         while(numberOfSteps != 0) {
             int index2 = 0;
             if(emptyPlace[0]!=3 && !(preLoc[0]== emptyPlace[0]+1 && preLoc[1]== emptyPlace[1] )) {

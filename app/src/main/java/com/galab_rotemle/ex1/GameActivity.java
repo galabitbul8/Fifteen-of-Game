@@ -92,10 +92,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             done = false;
             board.shuffleMatrix();
             insertData();
+            startTime();
             txtMoves.setText("Moves: "+"0000");
             sec = 0;
             m = 0;
-            txtTime.setText("00:00");
+            txtTime.setText("Time: 00:00");
         }
         else {
             TextView val = (TextView) findViewById(v.getId());;
@@ -136,19 +137,19 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 public void run() {
                     while (!done) {
                         if(!pauseTimer){
-                        //count second
-                        sec++;
-                        if (sec == 60) {
-                            sec = 0;
-                            m++; // count minutes
-                        }
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                txtTime.setText(String.format(Locale.getDefault(), "%02d", m) + ":" + String.format(Locale.getDefault(), "%02d", sec));
+                            //count second
+                            sec++;
+                            if (sec == 60) {
+                                sec = 0;
+                                m++; // count minutes
                             }
-                        });
-                        SystemClock.sleep(1000);
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    txtTime.setText("Time: "+String.format(Locale.getDefault(), "%02d", m) + ":" + String.format(Locale.getDefault(), "%02d", sec));
+                                }
+                            });
+                            SystemClock.sleep(1000);
                         }
                     }
                     thread = null;
