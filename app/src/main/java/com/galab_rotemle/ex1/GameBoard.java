@@ -48,7 +48,7 @@ public class GameBoard {
         int[] preLoc = new int[] {matrix.length - 1, matrix.length - 1};
         int[][] indexes = new int[4][2];
 
-        int numberOfSteps = 1;
+        int numberOfSteps = 100;
         while(numberOfSteps != 0) {
             int index2 = 0;
             if(emptyPlace[0]!=3 && !(preLoc[0]== emptyPlace[0]+1 && preLoc[1]== emptyPlace[1] )) {
