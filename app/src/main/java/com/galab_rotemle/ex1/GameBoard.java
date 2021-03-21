@@ -37,7 +37,6 @@ public class GameBoard {
     }
 
     private void switchPlaces(int[] switchPlace, int value) {
-        Log.d("myLog", "switchPlaces: ");
         matrix[switchPlace[0]][switchPlace[1]] = 16;
         matrix[emptyPlace[0]][emptyPlace[1]] = value;
         emptyPlace[0] = switchPlace[0];

@@ -3,6 +3,7 @@ package com.galab_rotemle.ex1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.sql.Timestamp;
 import java.util.Locale;
@@ -22,6 +24,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     GameBoard board ;
     TextView [] boxesArray = new TextView[16];
     TextView txtMoves;
+    int sec = 0;
+    int m = 0;
+    boolean pauseTimer = false;
+    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +36,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         txtTime = (TextView) findViewById(R.id.time);
         startTime();
         board = new GameBoard();
+        mp = MediaPlayer.create(this, R.raw.androidmusic);
+        mp.start();
 
         Button btnNewGame = (Button)findViewById(R.id.new_game);
         txtMoves =  findViewById(R.id.textView33);
@@ -41,6 +49,28 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             boxesArray[i].setOnClickListener(this);
         }
         insertData();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("myLog", "onStop: ");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("myLog", "onPause: ");
+        pauseTimer = true;
+        mp.pause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("myLog", "onResume: ");
+        pauseTimer = false;
+        mp.start();
     }
 
     private void insertData() {
@@ -58,11 +88,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.new_game){
-            Log.d("myLog", "new game pressed: ");
+            activateBoxes(true);
+            done = false;
             board.shuffleMatrix();
             insertData();
             txtMoves.setText("Moves: "+"0000");
-
+            sec = 0;
+            m = 0;
+            txtTime.setText("00:00");
         }
         else {
             TextView val = (TextView) findViewById(v.getId());;
@@ -74,7 +107,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         board.switchByPress(board.matrix, value);
                         insertData();
                         if(board.checkGameStatus()) {
-                            Log.d("myLog", "Completed!!!: ");
+                            done=true;
+                            activateBoxes(false);
+                            Toast.makeText(this, "Game Over - Puzzle solved", Toast.LENGTH_LONG*3).show();
                         }
                     }
                 }
@@ -93,13 +128,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void startTime(){
+        Log.d("myLog", "startTime: " + thread);
         if(thread == null) {
             thread = new Thread(new Runnable() {
-                int sec = 0;
-                int m = 0;
+
                 @Override
                 public void run() {
                     while (!done) {
+                        if(!pauseTimer){
                         //count second
                         sec++;
                         if (sec == 60) {
@@ -113,11 +149,20 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             }
                         });
                         SystemClock.sleep(1000);
+                        }
                     }
                     thread = null;
                 }
             });
             thread.start();
+        }
+    }
+
+    private void activateBoxes(Boolean status) {
+        for (int i = 0; i <16 ; i++) {
+            String str = "box" + (i+1) + "";
+            boxesArray[i] = findViewById(getResources().getIdentifier(str, "id", getPackageName()));
+            boxesArray[i].setClickable(status);
         }
     }
 

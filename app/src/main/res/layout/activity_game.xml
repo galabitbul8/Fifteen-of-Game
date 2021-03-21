@@ -33,8 +33,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="360dp"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@drawable/box">
@@ -46,8 +46,8 @@
 
             <TextView
                 android:id="@+id/box1"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -55,8 +55,8 @@
 
             <TextView
                 android:id="@+id/box5"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -64,8 +64,8 @@
 
             <TextView
                 android:id="@+id/box9"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -73,8 +73,8 @@
 
             <TextView
                 android:id="@+id/box13"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -89,8 +89,8 @@
             <TextView
 
                 android:id="@+id/box2"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -98,8 +98,8 @@
 
             <TextView
                 android:id="@+id/box6"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -108,8 +108,8 @@
             <TextView
 
                 android:id="@+id/box10"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -117,8 +117,8 @@
 
             <TextView
                 android:id="@+id/box14"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -132,8 +132,8 @@
 
             <TextView
                 android:id="@+id/box3"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -141,8 +141,8 @@
 
             <TextView
                 android:id="@+id/box7"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -150,8 +150,8 @@
 
             <TextView
                 android:id="@+id/box11"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -159,8 +159,8 @@
 
             <TextView
                 android:id="@+id/box15"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -174,8 +174,8 @@
 
             <TextView
                 android:id="@+id/box4"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -183,8 +183,8 @@
 
             <TextView
                 android:id="@+id/box8"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -192,8 +192,8 @@
 
             <TextView
                 android:id="@+id/box12"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
@@ -201,8 +201,8 @@
 
             <TextView
                 android:id="@+id/box16"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
