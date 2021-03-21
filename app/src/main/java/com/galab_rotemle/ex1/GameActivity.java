@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -99,10 +100,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private void insertData() {
         for (int i = 0; i < board.matrix.length; i++) {
             for (int j = 0; j < board.matrix.length; j++){
-                if(board.matrix[i][j] == 16)
+                if(board.matrix[i][j] == 16){
                     boxesArray[i * board.matrix.length + j].setText("");
-                else
+                    boxesArray[i * board.matrix.length + j].setBackgroundColor(Color.parseColor("#ffffff"));
+                }
+                else {
                     boxesArray[i * board.matrix.length + j].setText(board.matrix[i][j] + "");
+                    boxesArray[i * board.matrix.length + j].setBackgroundColor(Color.parseColor("#9F6535"));
+                }
 
             }
         }
@@ -137,16 +142,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     }
                 }
-                int length =(int) (Math.log10(board.count) + 1);
-
-                String zeros="000";
-                if(length  == 2)
-                    zeros="00";
-                else if(length == 3)
-                    zeros="0";
-                else if(length ==4)
-                    zeros="";
-                txtMoves.setText("Moves: "+zeros +board.count);
+                txtMoves.setText(String.format( "Moves: %04d", board.count));
             }
         }
     }
