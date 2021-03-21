@@ -27,7 +27,7 @@ public class GameBoard {
     }
 
     private int[][] initMatrix(int size) {
-        int[][]mat = new int[size][size];;
+        int[][]mat = new int[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 mat[i][j] = (j + 1 + i*size);
