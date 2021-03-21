@@ -1,9 +1,5 @@
 package com.galab_rotemle.ex1;
 
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
-
 public class GameBoard {
     int [][] matrix;
     int[] emptyPlace;
@@ -87,7 +83,6 @@ public class GameBoard {
         }
     }
     public void switchByPress(int[][] matrix,int num) {
-        Log.d("myLog", "switchByPress: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
                 if(num == matrix[i][j] &&

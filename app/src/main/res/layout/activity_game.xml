@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +18,7 @@
             android:id="@+id/textView33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Moves: 0000" />
+            android:text="@string/moves" />
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -29,7 +28,7 @@
             android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time: 00:00" />
+            android:text="@string/time" />
     </LinearLayout>
 
     <LinearLayout
@@ -54,7 +53,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="1" />
+                android:text="@string/_1" />
 
             <TextView
                 android:id="@+id/box5"
@@ -65,7 +64,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="5" />
+                android:text="@string/_5" />
 
             <TextView
                 android:id="@+id/box9"
@@ -76,7 +75,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="9" />
+                android:text="@string/_9" />
 
             <TextView
                 android:id="@+id/box13"
@@ -87,7 +86,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="13" />
+                android:text="@string/_13" />
         </LinearLayout>
 
         <LinearLayout
@@ -105,7 +104,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="2" />
+                android:text="@string/_2" />
 
             <TextView
                 android:id="@+id/box6"
@@ -116,7 +115,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="6" />
+                android:text="@string/_6" />
 
             <TextView
 
@@ -128,7 +127,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="10" />
+                android:text="@string/_10" />
 
             <TextView
                 android:id="@+id/box14"
@@ -139,7 +138,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="14" />
+                android:text="@string/_14" />
         </LinearLayout>
 
         <LinearLayout
@@ -156,7 +155,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="3" />
+                android:text="@string/_3" />
 
             <TextView
                 android:id="@+id/box7"
@@ -167,7 +166,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="7" />
+                android:text="@string/_7" />
 
             <TextView
                 android:id="@+id/box11"
@@ -178,7 +177,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="11" />
+                android:text="@string/_11" />
 
             <TextView
                 android:id="@+id/box15"
@@ -189,7 +188,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="15" />
+                android:text="@string/_15" />
         </LinearLayout>
 
         <LinearLayout
@@ -206,7 +205,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="4" />
+                android:text="@string/_4" />
 
             <TextView
                 android:id="@+id/box8"
@@ -217,7 +216,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="8" />
+                android:text="@string/_8" />
 
             <TextView
                 android:id="@+id/box12"
@@ -228,7 +227,7 @@
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
                 android:layout_margin="1dp"
-                android:text="12" />
+                android:text="@string/_12" />
 
             <TextView
                 android:id="@+id/box16"
@@ -238,8 +237,7 @@
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
-                android:text="" />
+                android:layout_margin="1dp" />
         </LinearLayout>
 
     </LinearLayout>

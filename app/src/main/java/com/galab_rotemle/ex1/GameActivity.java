@@ -9,12 +9,9 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.Locale;
 
 public class GameActivity extends AppCompatActivity implements View.OnClickListener{
     TextView txtTime;
@@ -42,7 +39,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         board = new GameBoard();
         mp = MediaPlayer.create(this, R.raw.androidmusic);
         if(musicOn){
-            Log.d("myLog", "onCreate boolean2: " + musicOn);
             mp.start();
         }
 
@@ -70,13 +66,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("myLog", "onStop: ");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("myLog", "onPause: ");
         pauseTimer = true;
         if(musicOn)
             mp.pause();
@@ -86,7 +80,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("myLog", "onResume: " + musicOn);
         pauseTimer = false;
         if(musicOn){
             mp.start();
@@ -123,7 +116,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             txtTime.setText("Time: 00:00");
         }
         else {
-            TextView val = (TextView) findViewById(v.getId());;
+            TextView val = (TextView) findViewById(v.getId());
             if(val.getText() != ""){
             int value = Integer.parseInt(val.getText()+"");
 
@@ -151,8 +144,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 public void run() {
                     while (!done) {
                         if(!pauseTimer){
-                            //count second
-                            sec++;
+                            sec++; //count second
                             if (sec == 60) {
                                 sec = 0;
                                 m++; // count minutes
@@ -160,7 +152,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    txtTime.setText("Time: "+String.format(Locale.getDefault(), "%02d", m) + ":" + String.format(Locale.getDefault(), "%02d", sec));
+                                    txtTime.setText("Time: "+String.format( "%02d", m) + ":" + String.format( "%02d", sec));
                                 }
                             });
                             SystemClock.sleep(1000);
