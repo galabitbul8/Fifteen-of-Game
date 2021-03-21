@@ -20,7 +20,6 @@ import java.sql.Timestamp;
 import java.util.Locale;
 
 public class GameActivity extends AppCompatActivity implements View.OnClickListener{
-    String time = "00:00";
     TextView txtTime;
     Thread thread;
     boolean done = false;
