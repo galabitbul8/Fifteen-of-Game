@@ -32,212 +32,194 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="326sp"
+        android:layout_width="326dp"
         android:layout_height="326dp"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:backgroundTint="@color/black"
-        android:background="@drawable/box">
+        android:gravity="center" >
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="320dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/box1"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_1" />
 
             <TextView
                 android:id="@+id/box5"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_5" />
 
             <TextView
                 android:id="@+id/box9"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_9" />
 
             <TextView
                 android:id="@+id/box13"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_13" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="320dp"
             android:orientation="vertical">
 
             <TextView
 
                 android:id="@+id/box2"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_2" />
 
             <TextView
                 android:id="@+id/box6"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_6" />
 
             <TextView
 
                 android:id="@+id/box10"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_10" />
 
             <TextView
                 android:id="@+id/box14"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_14" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="320dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/box3"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_3" />
 
             <TextView
                 android:id="@+id/box7"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_7" />
 
             <TextView
                 android:id="@+id/box11"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_11" />
 
             <TextView
                 android:id="@+id/box15"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_15" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="320dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/box4"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_4" />
 
             <TextView
                 android:id="@+id/box8"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_8" />
 
             <TextView
                 android:id="@+id/box12"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
                 android:textColor="@color/yellow"
-                android:layout_margin="1dp"
                 android:text="@string/_12" />
 
             <TextView
                 android:id="@+id/box16"
-                android:layout_width="79dp"
-                android:layout_height="79dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:textSize="30sp"
                 android:gravity="center"
                 android:background="@drawable/box"
-                android:textColor="@color/yellow"
-                android:layout_margin="1dp" />
+                android:textColor="@color/yellow" />
         </LinearLayout>
 
     </LinearLayout>

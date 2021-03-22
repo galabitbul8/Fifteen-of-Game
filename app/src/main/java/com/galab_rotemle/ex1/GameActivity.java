@@ -74,7 +74,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         pauseTimer = true;
         if(musicOn)
             mp.pause();
-        mp.pause();
+//        mp.pause();
     }
 
     @Override
@@ -91,11 +91,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             for (int j = 0; j < board.matrix.length; j++){
                 if(board.matrix[i][j] == 16){
                     boxesArray[i * board.matrix.length + j].setText("");
-                    boxesArray[i * board.matrix.length + j].setBackgroundColor(Color.parseColor("#ffffff"));
+                    boxesArray[i * board.matrix.length + j].setBackgroundResource(R.drawable.empty_box);
                 }
                 else {
                     boxesArray[i * board.matrix.length + j].setText(board.matrix[i][j] + "");
-                    boxesArray[i * board.matrix.length + j].setBackgroundColor(Color.parseColor("#9F6535"));
+                    boxesArray[i * board.matrix.length + j].setBackgroundResource(R.drawable.box);
                 }
 
             }
